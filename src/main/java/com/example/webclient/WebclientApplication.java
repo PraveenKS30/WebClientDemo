@@ -11,7 +11,8 @@ public class WebclientApplication {
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = SpringApplication.run(WebclientApplication.class, args);
 		ResponseService resp = applicationContext.getBean(ResponseService.class);
-		resp.getClientResp();
+		//resp.getClientResp();
+		resp.getClientRespWithHeaders();
 	}
 
 }
